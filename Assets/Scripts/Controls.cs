@@ -6,6 +6,9 @@ public class Controls : MonoBehaviour {
 
     public Rigidbody2D rb;
     public float movespeed;
+    public bool moveright;
+    public bool moveleft;
+    public bool jump;
 
     void Start()
     {
@@ -15,18 +18,7 @@ public class Controls : MonoBehaviour {
 
     void Update()
     {
-
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            rb.velocity = new Vector2(-movespeed, rb.velocity.y);
-
-        }
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            rb.velocity = new Vector2(movespeed, rb.velocity.y);
-
-        }
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (jump)
         {
             rb.AddForce(new Vector2(0, 1), ForceMode2D.Impulse);
         }
