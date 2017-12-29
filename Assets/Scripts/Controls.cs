@@ -5,6 +5,7 @@ using UnityEngine;
 public class Controls : MonoBehaviour {
 
     public Rigidbody2D rb;
+    public GameObject player;
     public float movespeed;
     public bool moveright;
     public bool moveleft;
@@ -22,5 +23,9 @@ public class Controls : MonoBehaviour {
         {
             rb.AddForce(new Vector2(0, 1), ForceMode2D.Impulse);
         }
+    }
+    void OnBecameInvisible()
+    {
+        Destroy(player);
     }
 }
