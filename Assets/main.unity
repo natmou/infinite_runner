@@ -560,7 +560,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GroundEnemy: {fileID: 1735750213090116, guid: 43e1e0a0ce60d6541b60d4f8b3dac89b,
     type: 2}
-  AirEnemy: {fileID: 0}
+  AirEnemy: {fileID: 1914013664117774, guid: f390d6dfd9f5153479a27c7108b610dc, type: 2}
   cpt: 0
   map: {fileID: 822404787}
 --- !u!1 &1626752744

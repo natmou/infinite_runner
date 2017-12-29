@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 50902577511832622}
   - component: {fileID: 114647470635938530}
   m_Layer: 0
-  m_Name: New Prefab
+  m_Name: FlyingEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
